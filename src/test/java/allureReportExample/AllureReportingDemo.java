@@ -27,7 +27,6 @@ public class AllureReportingDemo extends BaseClass
 	
     public WebDriver wd;
 	
-	@SuppressWarnings("deprecation")
 	@BeforeClass
 	public void setUp()
 	{
@@ -39,8 +38,6 @@ public class AllureReportingDemo extends BaseClass
 		wd = bs.intialize_driver();
 		wd.get("https://demo.nopcommerce.com/");
 	}
-	
-	@SuppressWarnings("deprecation")
 	
 	@Test(priority=1, description = "verify logo presence on Home Page")
 	@Description("Verify logo presence on Home Page")
